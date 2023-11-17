@@ -1,10 +1,10 @@
-import './App.css';
-import Cursor from './components/Cursor';
+import "./App.css";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   return (
     <>
-    <Cursor/>
+      <CustomCursor />
     </>
   );
 }

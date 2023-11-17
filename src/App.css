@@ -1,19 +1,9 @@
-* {
-  cursor: default;
-  background-color: beige;
-}
-
-.cursor-outline {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.cursor-outline {
+.custom-cursor {
+  position: fixed;
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Allows interactions with elements beneath the cursor */
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
